@@ -1,28 +1,30 @@
-0x01. ES6 Promises
-JavaScript ES6
+# 0x01. ES6 Promises
+## JavaScript ES6
 
-Learning Objectives
+### Learning Objectives
 At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
 
-Promises (how, why, and what)
-How to use the then, resolve, catch methods
-How to use every method of the Promise object
-Throw / Try
-The await operator
-How to use an async function
-Requirements
-All your files will be executed on Ubuntu 18.04 LTS using NodeJS 12.11.x
-Allowed editors: vi, vim, emacs, Visual Studio Code
-All your files should end with a new line
-A README.md file, at the root of the folder of the project, is mandatory
-Your code should use the js extension
-Your code will be tested using Jest and the command npm run test
-Your code will be verified against lint using ESLint
-All of your functions must be exported
-Setup
-Install NodeJS 12.11.x
-(in your home directory):
+#### Promises (how, why, and what)
+- How to use the then, resolve, catch methods
+- How to use every method of the Promise object
+- Throw / Try
+- The await operator
+- How to use an async function
+  
+### Requirements
+- All your files will be executed on Ubuntu 18.04 LTS using NodeJS 12.11.x
+- Allowed editors: vi, vim, emacs, Visual Studio Code
+- All your files should end with a new line
+- A README.md file, at the root of the folder of the project, is mandatory
+- Your code should use the js extension
+- Your code will be tested using Jest and the command npm run test
+- Your code will be verified against lint using ESLint
+- All of your functions must be exported
 
+### Setup
+#### Install NodeJS 12.11.x
+(in your home directory):
+```bash
 curl -sL https://deb.nodesource.com/setup_12.x -o nodesource_setup.sh
 sudo bash nodesource_setup.sh
 sudo apt install nodejs -y
@@ -30,15 +32,15 @@ $ nodejs -v
 v12.11.1
 $ npm -v
 6.11.3
-Install Jest, Babel, and ESLint
+```
+#### Install Jest, Babel, and ESLint
 in your project directory, install Jest, Babel and ESList by using the supplied package.json and run npm install.
 
-Configuration Files
+##### Configuration Files
 Add the files below to your project directory
 
-package.json
-Click to show/hide file contents
-
+###### package.json
+```bash
 {
   "scripts": {
     "lint": "./node_modules/.bin/eslint",
@@ -58,10 +60,10 @@ Click to show/hide file contents
     "jest": "^24.9.0"
   }
 }
+```
 
-babel.config.js
-Click to show/hide file contents
-
+###### babel.config.js
+```bash
 module.exports = {
   presets: [
     [
@@ -74,12 +76,11 @@ module.exports = {
     ],
   ],
 };
+```
 
-utils.js
+###### utils.js
 Use when you get to tasks requiring uploadPhoto and createUser.
-
-Click to show/hide file contents
-
+```bash
 export function uploadPhoto() {
   return Promise.resolve({
     status: 200,
@@ -94,11 +95,10 @@ export function createUser() {
     lastName: 'Salva',
   });
 }
+```
 
-
-.eslintrc.js
-Click to show/hide file contents
-
+###### .eslintrc.js
+```bash
 module.exports = {
   env: {
     browser: false,
@@ -134,20 +134,22 @@ module.exports = {
     }
   ]
 };
-
+```
 and…
 Don’t forget to run $ npm install when you have the package.json
 
-Response Data Format
+###### Response Data Format
 uploadPhoto returns a response with the format
-
+```bash
 {
   status: 200,
   body: 'photo-profile-1',
 }
+```
 createUser returns a response with the format
-
+```bash
 {
   firstName: 'Guillaume',
   lastName: 'Salva',
 }
+```

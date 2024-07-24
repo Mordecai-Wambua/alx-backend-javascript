@@ -1,4 +1,7 @@
-ALX Short Specialization (Backend)
-JavaScript
+# ALX Short Specialization (Backend)
 
-0x00-ES6_basic = ES6 Basics
+## JavaScript
+
+##### 0x00-ES6_basic
+##### 0x01. ES6 Promises
+
