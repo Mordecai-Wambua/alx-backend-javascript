@@ -6,7 +6,6 @@ class StudentsController {
       .then((output) => {
         const results = [];
         results.push('This is the list of our students');
-        // let result = 'This is the list of our students\n';
 
         for (const field in output) {
           if (field) {
@@ -17,21 +16,10 @@ class StudentsController {
             );
           }
         }
-        // const sortedFields = Object.keys(output).sort((a, b) =>
-        //   a.toLowerCase().localeCompare(b.toLowerCase())
-        // );
-
-        // sortedFields.forEach((field) => {
-        //   const students = output[field];
-        //   result += `Number of students in ${field}: ${
-        //     students.length
-        //   }. List: ${students.join(', ')}\n`;
-        // });
-
         response.status(200).send(results.join('\n'));
       })
       .catch((err) => {
-        response.send(`This is the list of our students\n${err.message}`);
+        response.send(`${err.message}`);
       });
   }
 
