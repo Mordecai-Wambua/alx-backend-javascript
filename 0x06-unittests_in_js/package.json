@@ -1,0 +1,14 @@
+{
+  "name": "0x06-unittests_in_js",
+  "version": "1.0.0",
+  "description": "## UnitTests | Back-end | JavaScript | ES6 | NodeJS | ExpressJS | Mocha",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Mordecai Wambua",
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "^10.7.3"
+  }
+}
