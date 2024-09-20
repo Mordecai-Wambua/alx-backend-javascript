@@ -4,11 +4,12 @@
   "description": "## UnitTests | Back-end | JavaScript | ES6 | NodeJS | ExpressJS | Mocha",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha --exit"
   },
   "author": "Mordecai Wambua",
   "license": "MIT",
   "devDependencies": {
+    "chai": "^4.5.0",
     "mocha": "^10.7.3"
   }
 }
